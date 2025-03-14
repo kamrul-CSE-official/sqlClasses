@@ -152,4 +152,4 @@ FROM fahimDept;
 
 CREATE UNIQUE INDEX idx_email on Employees(email);
 
-SELECT * FROM Employees WHERE email = 'kamrul@gmail.com';
+SELECT email FROM Employees WHERE email = 'kamrul@gmail.com';
