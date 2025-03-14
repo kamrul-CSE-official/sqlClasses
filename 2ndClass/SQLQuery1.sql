@@ -23,6 +23,15 @@ SELECT name FROM users WHERE name LIKE '____l';
 
 SELECT COUNT(*) FROM users;
 
+SELECT AVG(users.age) AS avgs FROM users;
+
+SELECT name FROM sys.databases;
+
+SELECT COLUMN_NAME 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE TABLE_NAME = 'users';
+
+
 
 
 
