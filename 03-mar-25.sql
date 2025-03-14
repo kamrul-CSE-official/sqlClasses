@@ -139,3 +139,17 @@ WITH AVGSalary AS (
     FROM Employees
 )
 SELECT * FROM AVGSalary;
+
+WITH fahimDept AS (
+    SELECT * 
+    FROM Students 
+    WHERE name = 'fahim'
+)
+SELECT stu_id, name 
+FROM fahimDept;
+
+
+
+CREATE UNIQUE INDEX idx_email on Employees(email);
+
+SELECT * FROM Employees WHERE email = 'kamrul@gmail.com';
